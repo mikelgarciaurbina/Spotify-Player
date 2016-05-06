@@ -1,0 +1,41 @@
+.spotify-logo {
+	width: 100%;
+	background: -webkit-radial-gradient(rgb(255, 255, 255), rgb(190, 190, 190));
+	background: -moz-radial-gradient(rgb(255, 255, 255), rgb(190, 190, 190));
+	background: -o-radial-gradient(rgb(255, 255, 255), rgb(190, 190, 190));
+	background: -ms-radial-gradient(rgb(255, 255, 255), rgb(190, 190, 190));
+	background: radial-gradient(rgb(255, 255, 255), rgb(190, 190, 190));
+}
+
+.search-button {
+	position: relative;
+	top: -34px;
+	right: 0px;
+	float: right;
+	background: #A9D03F;
+	width: 120px;
+}
+
+.search-button:hover, .search-button:active, .search-button:focus, .search-button:active:focus {
+	background: #7AB443;
+	outline: none;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	background: white;
+	border-bottom: #eee 1px solid;
+	max-height: 85px;
+	transition: all 0.5s ease;
+}
+
+.input-search-track {
+	margin-top: 25px;
+}
+
+.tracks-container {
+	margin-top: 80px;
+}

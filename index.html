@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/audioStyle.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row js-logo-image">
+				<div class="col-sm-8 col-sm-offset-2">
+					<img class="spotify-logo" src="images/spotify.jpg">
+				</div>
+			</div>
+			<div class="row js-search-bar">
+				<div class="col-sm-3 hide js-logo-little">
+		            <img src="http://vignette2.wikia.nocookie.net/rap/images/0/03/Spotify_transparent_logo.png/revision/latest?cb=20141228043655&path-prefix=es" alt="logo" height="80" />
+		        </div>
+				<div class="col-sm-6 col-sm-offset-3 js-search-offset">
+					<form role="form">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-12">
+									<input class="form-control input-search-track" id="trackName" type="text" name="trackName" placeholder="Input track name...">
+									<button type="submit" class="btn btn-default search-button">Submit</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="js-container-tracks hide tracks-container">
+			<div class="container">
+				<div class="row js-add-tracks">
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="js/circleAudio.js"></script>
+		<script>
+	      $(document).ready(function() {
+	        var lastScrollTop = 0;
+	        $(window).on('scroll', function() {
+	          var st = $(this).scrollTop();
+	          if(st < lastScrollTop) {
+	            $('.navbar').fadeIn();
+	          } else {
+	            $('.navbar').fadeOut();
+	          }
+	          lastScrollTop = st;
+	        });
+	      });
+	    </script>
+	</body>
+</html>
